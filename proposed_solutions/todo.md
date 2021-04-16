@@ -2,6 +2,6 @@
 02. bidirectional LSTM might simplify the output of seq model
 03. vec2seq (insertion sort)
 04. Maybe RL will also do
-
+05. add callbacks to models
 
 
