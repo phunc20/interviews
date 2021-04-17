@@ -33,4 +33,22 @@ I have made some wrong judgement in the course, which I shall correct here.
 - Notebooks with numbers and names are in contrast records of my work.
 
 
+## Conclusion and Regrets
+I don't get to train a lot of models, the only weight included in the repo is `01-vanilla_NN/vanilla_NN_model.h5`. This is also the first successfully trained weight of mine. I might not even find time to evaluate it.
+
+The problem and regret of mine is that
+- I spent too much time trying to make my first model and first dataset work, while that dataset would need time to better prepared.
+- That being said, the dataset can be trained on LSTM but I haven't yet found out why the training process got stuck and died often. I think the problem is at the dataset; maybe it took too much RAM.
+
+I spent quite some time analysing and taking notes down how and what we could do in the markdown files as well as in
+the notebooks. If in case the one who judges this work does not have enough time, let me list the most important files
+according to their importance and chronological order:
+
+- `02-sequential_models/01-analysis.ipynb`
+- `01-vanilla_NN/01-vanilla_NN.ipynb`
+- `README.md`
+- `01-vanilla_NN/03-evaluation.ipynb`
+- `02-sequential_models/06-dataset_fixed_length.ipynb`
+
+
 
