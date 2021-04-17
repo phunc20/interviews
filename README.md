@@ -17,6 +17,3 @@ Please follow the following steps
 Deadline is within 24h.
 
 
-## The Environment
-I used Python3.7 and `virtualenv`. Running `pip install -r requirements.txt` in one's selected virtual environment
-should be good to run.

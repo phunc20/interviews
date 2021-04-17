@@ -51,4 +51,6 @@ according to their importance and chronological order:
 - `02-sequential_models/06-dataset_fixed_length.ipynb`
 
 
-
+## The Environment
+I used Python3.7 and `virtualenv`. Running `pip install -r requirements.txt` in one's selected virtual environment
+should be good to run.
