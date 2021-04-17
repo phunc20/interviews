@@ -15,6 +15,7 @@
 07. Reinforcement Learning
   - Possible
 
+
 ## Corrections
 I have made some wrong judgement in the course, which I shall correct here.
 
@@ -25,3 +26,11 @@ I have made some wrong judgement in the course, which I shall correct here.
   - We can keep the cross-entropy loss part, but we must add some other kinds of loss part
   - Probability makes our predictions victim of making repeated judgement, but the requirement is a sorted array of distinct integers (from `0` to `9`). For an input like `[0, 9, 7, 5]`, we must punish predictions like `[0, 9, 7, 7]`.
   - Another punishment scenario: An input like `[0, 9, 7, 5]` with a prediction `[0, 9, 1, 2]`. Clearly, `1` and `2` are not in the set of `{0, 9, 7, 5}`.
+
+
+## Directory and Files
+- Notebooks named `XY-.ipynb`, where `XY` represents two digits, e.g. `03-.ipynb`, are notebooks where I modified and ran previous code. They worth not be read unless otherwise specified.
+- Notebooks with numbers and names are in contrast records of my work.
+
+
+
