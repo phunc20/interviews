@@ -50,6 +50,7 @@ according to their importance and chronological order:
 - `01-vanilla_NN/03-evaluation.ipynb`
 - `02-sequential_models/06-dataset_fixed_length.ipynb`
 
+Oh, another stupid mistake: RNN layers should have `dropout=0`, i.e. no dropout at all, because we cannot afford to lose information when sorting.
 
 ## The Environment
 I used Python3.7 and `virtualenv`. Running `pip install -r requirements.txt` in one's selected virtual environment
