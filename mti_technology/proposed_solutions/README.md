@@ -52,6 +52,17 @@ according to their importance and chronological order:
 
 Oh, another stupid mistake: RNN layers should have `dropout=0`, i.e. no dropout at all, because we cannot afford to lose information when sorting.
 
+
+## Todo
+01. dataset1 and dataset2 using `tf.data.Dataset`
+02. Masking
+03. parallelize the numpy dataset1,2 to reduce time
+01. complexity discussion (i.e. compared to ingenious sorting algorithms human being has so far devised)
+02. bidirectional LSTM might simplify the output of seq model
+03. vec2seq (insertion sort)
+04. Maybe RL will also do
+05. <s>add callbacks to models</s> (DONE)
+
 ## The Environment
 I used Python3.7 and `virtualenv`. Running `pip install -r requirements.txt` in one's selected virtual environment
 should be good to run.
