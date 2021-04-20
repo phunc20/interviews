@@ -55,6 +55,7 @@ Oh, another stupid mistake: RNN layers should have `dropout=0`, i.e. no dropout 
 
 ## Todo
 01. dataset1 and dataset2 using `tf.data.Dataset`
+  - dataset2 using `tf.data.Dataset.from_generator()`
 02. Masking
 03. parallelize the numpy dataset1,2 to reduce time
 01. complexity discussion (i.e. compared to ingenious sorting algorithms human being has so far devised)
