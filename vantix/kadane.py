@@ -1,27 +1,20 @@
-def alternating_kadane(L, first_negative=False):
-    if first_negative:
-        max_current = max_global = -L[0]
-    else:
-        max_current = max_global = L[0]
-    if first_negative:
-        for p in range(1, len(L)):
-            x = L[p]
-            y = (-1)**(p+1) * x
+def alternating_kadane(L):
+    max_current = max_global = L[0]
+    for p in range(1, len(L)):
+        x = L[p]
+        y = (-1)**(p+1) * x
+        if p % 2 == 0:
             max_current = max(y, max_current + y)
-            if max_current > max_global:
-                max_global = max_current
-    else:
-        for p in range(1, len(L)):
-            x = L[p]
-            y = (-1)**(p) * x
-            max_current = max(y, max_current + y)
-            if max_current > max_global:
-                max_global = max_current
+        else:
+            #max_current = max(max_current, max_current + y)
+            pass
+        if max_current > max_global:
+            max_global = max_current
     return max_global
 
 def alternating_max_subarray(L):
-    max1 = alternating_kadane(L, first_negative=False)
-    max2 = alternating_kadane(L, first_negative=True)
+    max1 = alternating_kadane(L)
+    max2 = alternating_kadane(L[1:])
     return max(max1, max2)
 
 def test(L, expected):
